@@ -879,12 +879,12 @@ body::after {
 }
 @media (max-width: 60em) {
   .header {
-    grid-template-columns: 1fr 26.5%;
+    grid-template-columns: 1fr 26.5% !important;
   }
 }
 @media (max-width: 40.625em) {
   .header {
-    grid-template-columns: 1fr 6.875rem;
+    grid-template-columns: 1fr 6.875rem !important;
   }
 }
 .header__side-block {
@@ -1216,18 +1216,18 @@ body::after {
 }
 @media (max-width: 87.5em) {
   .main__main {
-    background: url("../img/king.png") right -15.625rem top -1.25rem no-repeat, url("../img/circle.png") right -31.25rem top -9.375rem no-repeat, #212b2c;
+    background: url("../img/king.png") right -15.625rem top -1.25rem no-repeat, url("../img/circle.png") right -31.25rem top -9.375rem no-repeat, #212b2c !important;
   }
 }
 @media (max-width: 60em) {
   .main__main {
-    background: url("../img/king.png") right -29.375rem top -1.25rem no-repeat, url("../img/circle.png") right -46.875rem top -9.375rem no-repeat, #212b2c;
+    background: url("../img/king.png") right -29.375rem top -1.25rem no-repeat, url("../img/circle.png") right -46.875rem top -9.375rem no-repeat, #212b2c !important;
     padding: 6.25rem 0 2.375rem;
   }
 }
 @media (max-width: 34.375em) {
   .main__main {
-    background: url("../img/king.png") right -6.875rem bottom -10rem/27.5rem no-repeat, url("../img/circle.png") right -53.125rem top -9.375rem no-repeat, #212b2c;
+    background: url("../img/king.png") right -6.875rem bottom -10rem/27.5rem no-repeat, url("../img/circle.png") right -53.125rem top -9.375rem no-repeat, #212b2c !important;
   }
 }
 .main__title {
@@ -1313,6 +1313,9 @@ body::after {
 }
 .seeking__wrapper {
   grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .seeking__text {
   margin: 4.6875rem 0;
@@ -1337,6 +1340,11 @@ body::after {
 @media (max-width: 25em) {
   .seeking__btn {
     padding: 1rem 2.8125rem;
+  }
+}
+@media (max-width: 40.625em) {
+  .seeking__btn {
+    margin: 0px auto;
   }
 }
 
