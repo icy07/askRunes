@@ -4281,9 +4281,11 @@
     }
     const script_textarea = document.querySelector(".rune-casting__textarea");
     if (script_textarea) script_textarea.addEventListener("input", (function() {
+        const limText = this.parentElement.querySelector(".rune-casting__limit-text");
         this.style.height = "auto";
         this.style.height = `${this.scrollHeight + 2}px`;
-        if (this.value.length >= 150) this.parentElement.classList.add("_max-lim"); else this.parentElement.classList.remove("_max-lim");
+        if (this.value.length >= 1) this.parentElement.classList.add("_max-lim"); else this.parentElement.classList.remove("_max-lim");
+        if (this.value.length >= 150) limText.innerHTML = "You have reached the maximum character limit"; else limText.innerHTML = `${this.value.length}/150`;
     }));
     isWebp();
     menuInit();

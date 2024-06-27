@@ -953,12 +953,12 @@ body::after {
 }
 @media (max-width: 60em) {
   .header__get-started-btn {
-    padding: 0;
+    padding: 0 !important;
   }
 }
 @media (max-width: 40.625em) {
   .header__get-started-btn {
-    padding: 0 0.9375rem;
+    padding: 0 0.9375rem !important;
     font-size: 1.5rem;
   }
 }
@@ -1069,8 +1069,12 @@ body::after {
     gap: 3.875rem;
   }
 }
+.menu__item {
+  text-align: center;
+}
 .menu__link {
   transition: 0.1s;
+  text-align: center;
 }
 @media (any-hover: hover) {
   .menu__link:hover {
@@ -1123,6 +1127,9 @@ body::after {
     flex-direction: column;
     gap: 3.875rem;
   }
+}
+.menu__casting-item {
+  text-align: left;
 }
 .menu__casting-item:not(:last-child) {
   margin-bottom: 1.5rem;
@@ -1212,11 +1219,17 @@ body::after {
 @media (max-height: 40.625em) {
   .main__main {
     padding: 3.125rem 0;
+    background: url("../img/king.png") right -7.5rem top -7.5rem no-repeat, url("../img/circle.png") right -25rem top -9.375rem no-repeat, #212b2c;
   }
 }
 @media (max-width: 87.5em) {
   .main__main {
-    background: url("../img/king.png") right -15.625rem top -1.25rem no-repeat, url("../img/circle.png") right -31.25rem top -9.375rem no-repeat, #212b2c !important;
+    background: url("../img/king.png") right -15.625rem top -1.25rem no-repeat, url("../img/circle.png") right -31.25rem top -9.375rem no-repeat, #212b2c;
+  }
+}
+@media ((max-width: 87.5em) and (max-height: 40.625em)) {
+  .main__main {
+    background: url("../img/king.png") right -15.625rem top -7.5rem no-repeat, url("../img/circle.png") right -31.25rem top -9.375rem no-repeat, #212b2c;
   }
 }
 @media (max-width: 60em) {
