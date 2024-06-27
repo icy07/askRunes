@@ -2129,6 +2129,12 @@ body::after {
     gap: 1.5rem;
   }
 }
+@media ((max-width: 60em) and (min-width: 43.8125em)) {
+  .answer--multiple-runes .answer__img img {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+}
 @media (max-width: 43.75em) {
   .answer--multiple-runes .answer__img-title {
     font-size: 1rem;
