@@ -1243,6 +1243,11 @@ body::after {
     background: url("../img/king.png") right -6.875rem bottom -10rem/27.5rem no-repeat, url("../img/circle.png") right -53.125rem top -9.375rem no-repeat, #212b2c !important;
   }
 }
+@media (min-height: 58.75em) {
+  .main__main {
+    background: url("../img/king.png") right -21.875rem bottom -12.5rem/68.75rem no-repeat, url("../img/circle.png") right -25rem bottom -9.375rem/75rem no-repeat, #212b2c !important;
+  }
+}
 .main__title {
   color: #fff;
   display: flex;
@@ -1895,6 +1900,14 @@ body::after {
 }
 .rune-casting__text {
   margin: 0px 0px 4.6875rem 0px;
+}
+.rune-casting__try-again {
+  color: #b38f78;
+  text-align: center;
+  margin: 0px 0px 1.5rem 0px;
+}
+.rune-casting__try-again.hidden {
+  display: none;
 }
 .rune-casting__form {
   margin: 4.6875rem 0px 0px 0px;
