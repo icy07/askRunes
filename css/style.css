@@ -1227,9 +1227,9 @@ body::after {
     background: url("../img/king.png") right -15.625rem top -1.25rem no-repeat, url("../img/circle.png") right -31.25rem top -9.375rem no-repeat, #212b2c;
   }
 }
-@media ((max-width: 87.5em) and (max-height: 40.625em)) {
+@media ((max-width: 87.5em) and (min-width: 60.0625em) and (max-height: 40.625em)) {
   .main__main {
-    background: url("../img/king.png") right -15.625rem top -7.5rem no-repeat, url("../img/circle.png") right -31.25rem top -9.375rem no-repeat, #212b2c;
+    background: url("../img/king.png") right -15.625rem top -7.5rem no-repeat, url("../img/circle.png") right -31.25rem top -9.375rem no-repeat, #212b2c !important;
   }
 }
 @media (max-width: 60em) {
