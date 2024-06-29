@@ -450,6 +450,25 @@ body::after {
     fill: white;
   }
 }
+.page {
+  padding: 6.25rem 0px 0px 0px;
+}
+@media (max-width: 71.9375em) {
+  .page {
+    padding: 8rem 0px 0px 0px;
+  }
+}
+@media (max-width: 60em) {
+  .page {
+    padding: 6.125rem 0px 0px 0px;
+  }
+}
+@media (max-width: 40.625em) {
+  .page {
+    padding: 5rem 0px 0px 0px;
+  }
+}
+
 .page--dark {
   background-color: #212b2c;
   color: #fff;
@@ -560,7 +579,7 @@ body::after {
 }
 @media (max-width: 56.25em) {
   .rune-block__right {
-    flex: 0 0 14.6875rem;
+    flex: 0 0 15.625rem;
   }
 }
 @media (max-width: 42.5em) {
@@ -867,10 +886,14 @@ body::after {
 }
 
 .header {
-  position: relative;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
   display: grid;
   grid-template-columns: 18.75% 1fr 18.75%;
-  align-items: center;
 }
 @media (max-width: 95.625em) {
   .header {
@@ -937,7 +960,6 @@ body::after {
 .header__get-started-btn {
   font-family: "MouseMemoirs";
   font-size: 3rem;
-  height: 100%;
   transition: 0.1s;
 }
 @media (any-hover: hover) {
@@ -1189,11 +1211,29 @@ body::after {
 }
 
 .main {
-  height: 100vh;
-  height: 100svh;
+  height: calc(100vh - 6.25rem);
+  height: 100svh-6.25rem;
   min-height: 35rem;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 71.9375em) {
+  .main {
+    height: calc(100vh - 8rem);
+    height: 100svh-8rem;
+  }
+}
+@media (max-width: 60em) {
+  .main {
+    height: calc(100vh - 6.125rem);
+    height: 100svh-6.125rem;
+  }
+}
+@media (max-width: 40.625em) {
+  .main {
+    height: calc(100vh - 5rem);
+    height: 100svh-5rem;
+  }
 }
 @media (max-width: 60em) {
   .main {
